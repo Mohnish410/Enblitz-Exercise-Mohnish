@@ -1,14 +1,6 @@
 # Enblitz-Exercise-Mohnish
-provider "aws" {
-  region = "ap-south-1"
-}
-
-resource "aws_instance" "my_instance" {
-  ami           = "ami-007020fd9c84e18c7"
-  key_name      = "key11"
-  instance_type = "t2.micro"
-  tags = {
-    "Name" = "Terraform1"
-  }
-
-}
+terraform fmt
+    terraform init
+    terraform validate
+     terraform plan
+    terraform apply
